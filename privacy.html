@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — ComicRow</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --primary: #7c4dff;
+      --primary-light: #b388ff;
+      --text: #e8eaed;
+      --text-muted: #9aa0a6;
+      --border: #2d3140;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    .container { max-width: 700px; margin: 0 auto; padding: 60px 24px; }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 8px;
+      color: var(--primary-light);
+    }
+    .date {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 40px;
+    }
+    h2 {
+      font-size: 1.3rem;
+      margin: 32px 0 12px;
+      color: var(--text);
+    }
+    p, li {
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+    ul { padding-left: 24px; }
+    a {
+      color: var(--primary-light);
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+    .back { display: inline-block; margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p class="date">Effective date: March 21, 2026</p>
+
+    <h2>Overview</h2>
+    <p>ComicRow is an open-source comic reader that connects to OPDS servers you configure. Your privacy is important — ComicRow is designed to keep your data on your device.</p>
+
+    <h2>Data We Collect</h2>
+    <p><strong>We do not collect any personal data.</strong> ComicRow does not include analytics, crash reporting, advertising SDKs, or any third-party tracking.</p>
+
+    <h2>Data Stored on Your Device</h2>
+    <p>The following data is stored locally on your device only:</p>
+    <ul>
+      <li><strong>Server credentials:</strong> Server URLs, usernames, and passwords you enter are stored securely on-device using encrypted storage. They are never transmitted anywhere except to the servers you configure.</li>
+      <li><strong>Reading progress:</strong> Your reading position for each comic is stored in a local database.</li>
+      <li><strong>Downloaded comics:</strong> Comics you choose to download are stored locally for offline access.</li>
+      <li><strong>Cached images:</strong> Recently viewed pages are cached locally for performance.</li>
+      <li><strong>App preferences:</strong> Settings such as theme, viewer mode, and per-server presets are stored locally.</li>
+    </ul>
+
+    <h2>Network Communication</h2>
+    <p>ComicRow communicates only with the OPDS servers you explicitly add. No data is sent to the developer, third parties, or any other external service. All network requests go directly between your device and your configured servers.</p>
+
+    <h2>Third-Party Services</h2>
+    <p>ComicRow does not use any third-party services, including:</p>
+    <ul>
+      <li>No analytics or crash reporting</li>
+      <li>No advertising networks</li>
+      <li>No social media integrations</li>
+      <li>No cloud sync services</li>
+    </ul>
+
+    <h2>Children's Privacy</h2>
+    <p>ComicRow does not collect any data from anyone, including children under 13.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>If this policy changes, the updated version will be posted here with a revised effective date.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this privacy policy can be directed to the project's <a href="https://github.com/Nadiar/comicrow-mobile/issues">GitHub Issues</a>.</p>
+
+    <a class="back" href="index.html">&larr; Back to ComicRow</a>
+  </div>
+</body>
+</html>

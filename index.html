@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ComicRow — Streaming Comic Reader</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --primary: #7c4dff;
+      --primary-light: #b388ff;
+      --text: #e8eaed;
+      --text-muted: #9aa0a6;
+      --border: #2d3140;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container { max-width: 800px; margin: 0 auto; padding: 0 24px; }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 80px 0 60px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, var(--primary-light), var(--primary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      color: var(--text-muted);
+      max-width: 560px;
+      margin: 0 auto 32px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 8px 20px;
+      background: var(--primary);
+      color: white;
+      border-radius: 24px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: opacity 0.2s;
+    }
+    .badge:hover { opacity: 0.85; }
+
+    /* Features */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      padding: 40px 0;
+    }
+    .feature {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+    }
+    .feature h3 {
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+      color: var(--primary-light);
+    }
+    .feature p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 0;
+      margin-top: 40px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: var(--primary-light);
+      text-decoration: none;
+    }
+    footer a:hover { text-decoration: underline; }
+    .footer-links { margin-bottom: 12px; }
+    .footer-links a { margin: 0 12px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="hero">
+      <h1>ComicRow</h1>
+      <p>A streaming-first comic reader for OPDS servers. Read your comics instantly — no waiting for full downloads.</p>
+      <a class="badge" href="https://github.com/Nadiar/comicrow-mobile/releases/latest">Download APK</a>
+    </section>
+
+    <section class="features">
+      <div class="feature">
+        <h3>Stream, Don't Wait</h3>
+        <p>Pages load on demand via OPDS streaming. Start reading immediately while the rest prefetches in the background.</p>
+      </div>
+      <div class="feature">
+        <h3>OPDS 1.2 &amp; 2.0</h3>
+        <p>Auto-detects your server's protocol. Works with ComicOPDS, Kavita, Komga, and other OPDS-compatible servers.</p>
+      </div>
+      <div class="feature">
+        <h3>Multiple Viewer Modes</h3>
+        <p>Single page, continuous vertical scroll, or double-page spread. Per-server reading presets remember your preferences.</p>
+      </div>
+      <div class="feature">
+        <h3>Offline Reading</h3>
+        <p>Download comics for offline access. Smart page caching keeps recent reads available even without a connection.</p>
+      </div>
+      <div class="feature">
+        <h3>Reading Progress</h3>
+        <p>Automatically tracks where you left off across sessions. Pick up right where you stopped.</p>
+      </div>
+      <div class="feature">
+        <h3>Material Design 3</h3>
+        <p>Clean, modern UI with full dark and light theme support. Designed for Android.</p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="https://github.com/Nadiar/comicrow-mobile">Source Code</a>
+        <a href="https://github.com/Nadiar/comicrow-mobile/releases">Releases</a>
+      </div>
+      <p>&copy; 2026 Nadiar. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
